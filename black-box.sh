@@ -5,6 +5,10 @@
 #  Authorized Penetration Testing Only
 # ==============================================================================
 #
+#  Autor: Lucas Zafalon
+#  GitHub: @LucasZafalon
+#  Criado para: Red Team | Bug Bounty | Pentest Black Box
+#
 #  Estrutura de fases:
 #   PHASE  1 — WHOIS + DNS Records
 #   PHASE  2 — Passive OSINT (theHarvester + crt.sh)
