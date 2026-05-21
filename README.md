@@ -10,29 +10,27 @@
 ```
 
 **Offensive Reconnaissance & Enumeration Framework — v4.0**  
-*For authorized penetration testing only.*
-
-**Autor:** Lucas Zafalon
-
-**Propósito:** Ser a framework que eu queria ter tido quando comecei a fazer recon sério.
+*For authorized penetration testing & Red Team operations only.*
 
 ---
 
 ## Visão Geral
 
-**Black Box Recon** é um framework de reconhecimento e enumeração ofensivo desenvolvido para operações de pentest em modalidade Black Box. O script automatiza as fases de Coleta de Informações, Varredura e Enumeração e Análise de Vulnerabilidades, orquestrando mais de 20 ferramentas especializadas em um pipeline coerente, com filtragem inteligente entre as fases e saída orientada a achados operacionais.
+**Black Box Recon** é o framework que eu queria ter quando comecei a fazer recon black box sério.
 
-O objetivo não é substituir o analista — é eliminar o trabalho mecânico repetitivo e deixar o operador focado nos findings que realmente importam.
+Ele automatiza todo o fluxo de reconhecimento e enumeração ofensiva (OSINT, subdomínios, superfície exposta, análise de JS, secrets, takeovers, etc) de forma inteligente, com filtragem pesada entre as fases e saída pensada para operador — não pra encher relatório de ruído.
+
+O foco não é ser bonito. É ser **útil pra caralho**.
 
 ---
 
 ## Filosofia
 
-- **Menos ruído, mais sinal.** Cada fase filtra o output antes de passá-lo para a próxima.
-- **Transparência de execução.** O comando exato sendo rodado aparece no terminal antes de cada ferramenta.
-- **Findings primeiro.** Vulnerabilidades críticas interrompem o fluxo visual com destaque máximo — não ficam escondidas no meio do output.
-- **Graceful degradation.** Ferramentas ausentes são ignoradas com aviso; o script nunca aborta por dependência opcional faltando.
-- **Arquivos com propósito.** Nenhum arquivo temporário ou output duplicado — cada arquivo gerado é usado em fases posteriores ou entregável final.
+- Menos ruído, mais sinal. Sempre.
+- Pipeline que pensa como Red Teamer de verdade.
+- Findings críticos ganham destaque visual (porque ninguém merece caçar .env no meio de 4000 linhas).
+- Ferramentas ausentes são ignoradas com elegância.
+- Zero arquivos inúteis. Tudo que é gerado tem propósito.
 
 ---
 
@@ -365,5 +363,11 @@ O script **não** trata ausência de TLS 1.0/1.1 como problema. O comportamento 
 > **Sempre obtenha autorização por escrito antes de executar qualquer teste.**
 
 ---
+
+## Autor
+
+**Lucas**  
+GitHub: [@LucasZafalon](https://github.com/LucasZafalon)  
+Feito com sangue, café e raiva de recon manual.
 
 *Black Box Recon v4.0 — Built for operators, by operators.*
