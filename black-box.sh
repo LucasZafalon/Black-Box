@@ -286,7 +286,7 @@ _banner() {
 BANNER
     printf "${RESET}"
     printf "${DIM}  Black Box Reconnaissance & Enumeration Framework — v4.0${RESET}\n"
-    printf "${DIM}  For authorized penetration testing only.${RESET}\n\n"
+    printf "${DIM}  Built for operators, by operators.${RESET}\n\n"
     _sep2
     printf "  ${DIM}%-16s${RESET}  ${W}%s${RESET}\n" "Date"     "$(date '+%Y-%m-%d %H:%M:%S')"
     printf "  ${DIM}%-16s${RESET}  ${W}%s${RESET}\n" "Operator" "$(whoami)@$(hostname 2>/dev/null || echo local)"
